@@ -1,0 +1,63 @@
+sudo apt-get update -y
+git clong https://github.com/manikcloud/jenkins-cicd.git
+git clone https://github.com/manikcloud/jenkins-cicd.git
+ll
+cd jenkins-cicd
+ll
+git switch create_ec2_tf
+ll
+chmod 755 jenkins-installation-ubuntu.sh
+history
+ll
+jenkins-installation-ubuntu.sh
+sh jenkins-installation-ubuntu.sh
+cat /var/lib/jenkins/secrets/initialAdminPassword
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+mvn --version
+sudo apt install maven
+mvn --version
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+sudo apt install tree -y
+ls
+cd my-app
+ls
+tree
+mvn install
+java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+history
+history | cut -c 8-
+cd ..
+ll
+clear
+ssh-keygen
+cd ~/.ssh/
+ll
+cat id_rsa.pub
+git clone git@github.com:robmichael93/jenkins-class.git
+ll
+rm -rf jenkins-class
+cd /home/
+cd ..
+ls
+cd usr
+ls
+cd ..
+cd home
+ls
+cd ..
+cd ~
+ls
+git clone git@github.com:robmichael93/jenkins-class.git
+ll
+cd jenkins-class
+ll
+touch history.txt
+ll
+git status
+git add history.txt
+git status
+git commit -am"added history file"
+git status
+git push
+git status
+history | cut -c 8- > history.txt
